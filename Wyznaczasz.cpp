@@ -1,5 +1,5 @@
 #include "Wyznaczasz.h"
-std::vector<int> Wyznaczasz::Znajdz_trase(std::vector<sf::Vector2f> & punkty,std::vector<droga> & drogi, int punkt_A,int punkt_B)
+std::vector<int> Wyznaczasz_zwykly::Znajdz_trase(std::vector<sf::Vector2f> & punkty,std::vector<droga> & drogi, int punkt_A,int punkt_B)
 {
 	std::vector<int> trasa;
 	struct djikstra
