@@ -6,6 +6,7 @@
 #include <conio.h>
 #include "Wyswietlacz.h"
 #include "punkty.h"
+#include "Wyznaczasz.h"
 
 
 
@@ -13,6 +14,7 @@ class Zazadzacz
 {
 	Wyswietlacz okno;
 	Punkty mapmanager;
+	Wyznaczasz znajdywacz;
 
 public:
 	Zazadzacz()

@@ -4,23 +4,24 @@
 #include<fstream>
 #include<string>
 #include <vector>
+#include "SFML\Window.hpp"
 
 
-
-struct punkt{
-	punkt(float,float);
-	float a,b;
+struct droga{
+	droga(){}
+	droga(int,int);
+	int a,b;
+	float dlugosc;
 };
-
 class Punkty
 {
-	int n, rozmiar;
 	std::string a;
-	std::vector<punkt> tabpunkt;
+	std::vector<sf::Vector2f> tabpunkt;
+	std::vector<droga> tabdroga;
 public:
-	float *tab, x; 
 	Punkty();
-	std::vector<punkt> Wektor();
+	std::vector<sf::Vector2f> GetPoints();
+	std::vector<droga> GetDrogi();
 };
 
 #endif
